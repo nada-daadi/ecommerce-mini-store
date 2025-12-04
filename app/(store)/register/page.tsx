@@ -21,13 +21,13 @@ export default function RegisterPage() {
 
   return (
     <div className="container flex min-h-[80vh] items-center justify-center py-8">
-      <Card className="w-full max-w-md animate-scale-in">
-        <CardHeader className="text-center space-y-2 !grid-cols-1">
-          <Link href="/" className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary">
-            <span className="text-2xl font-bold text-primary-foreground">M</span>
+      <Card className="w-full max-w-md animate-scale-in border-blue-200">
+        <CardHeader className="text-center space-y-2 !grid-cols-1 bg-gradient-to-r from-blue-50 to-blue-100">
+          <Link href="/" className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600">
+            <span className="text-2xl font-bold text-white">M</span>
           </Link>
-          <CardTitle className="text-2xl">Create Account</CardTitle>
-          <CardDescription>Sign up to get started with your account</CardDescription>
+          <CardTitle className="text-2xl text-blue-900">Create Account</CardTitle>
+          <CardDescription className="text-blue-700">Sign up to get started with your account</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSignup} className="space-y-4">
@@ -76,7 +76,7 @@ export default function RegisterPage() {
                 </button>
               </div>
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full bg-blue-600 text-white hover:bg-blue-700">
               Create Account
             </Button>
           </form>
